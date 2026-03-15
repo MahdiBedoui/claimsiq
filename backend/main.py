@@ -338,6 +338,17 @@ def seed_data():
     return {"loaded": result["loaded"], "validation": val}
 
 
+# ─── Sample CSV Download ──────────────────────────────────────────────────
+
+SAMPLE_CSV = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sample_claims.csv")
+
+@app.get("/api/sample-csv")
+def download_sample_csv():
+    if not os.path.exists(SAMPLE_CSV):
+        raise HTTPException(status_code=404, detail="Sample CSV not found")
+    return FileResponse(SAMPLE_CSV, media_type="text/csv", filename="sample_claims.csv")
+
+
 # ─── Serve Frontend (production) ──────────────────────────────────────────
 
 FRONTEND_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "frontend", "dist")

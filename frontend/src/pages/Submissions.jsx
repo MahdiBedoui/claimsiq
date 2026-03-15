@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { Upload, FileText, CheckCircle, AlertTriangle, Loader, Eye } from 'lucide-react'
+import { Upload, FileText, CheckCircle, AlertTriangle, Loader, Eye, Download } from 'lucide-react'
 
 export default function Submissions() {
   const [subs, setSubs] = useState([])
@@ -9,8 +9,19 @@ export default function Submissions() {
   const [processing, setProcessing] = useState(null)
   const [result, setResult] = useState(null)
 
+  const [loadingSample, setLoadingSample] = useState(false)
+
   const load = () => fetch('/api/submissions').then(r => r.json()).then(setSubs)
   useEffect(() => { load() }, [])
+
+  const handleLoadSample = async () => {
+    setLoadingSample(true)
+    const res = await fetch('/api/sample-csv')
+    const blob = await res.blob()
+    const file = new File([blob], 'sample_claims.csv', { type: 'text/csv' })
+    await handleUpload(file)
+    setLoadingSample(false)
+  }
 
   const handleUpload = async (file) => {
     if (!file || !file.name.endsWith('.csv')) return alert('Please upload a CSV file')
@@ -72,10 +83,21 @@ export default function Submissions() {
           {uploading ? 'Uploading...' : 'Drag & drop a CSV file here, or'}
         </p>
         {!uploading && (
-          <label className="mt-2 inline-block px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white text-sm font-medium rounded-lg cursor-pointer transition-colors">
-            Browse Files
-            <input type="file" accept=".csv" className="hidden" onChange={(e) => handleUpload(e.target.files[0])} />
-          </label>
+          <div className="flex items-center justify-center gap-3 mt-2">
+            <label className="inline-block px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white text-sm font-medium rounded-lg cursor-pointer transition-colors">
+              Browse Files
+              <input type="file" accept=".csv" className="hidden" onChange={(e) => handleUpload(e.target.files[0])} />
+            </label>
+            <span className="text-xs text-gray-400">or</span>
+            <button
+              onClick={handleLoadSample}
+              disabled={loadingSample}
+              className="inline-flex items-center gap-1.5 px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white text-sm font-medium rounded-lg transition-colors"
+            >
+              {loadingSample ? <Loader className="w-4 h-4 animate-spin" /> : <Download className="w-4 h-4" />}
+              Try Sample CSV
+            </button>
+          </div>
         )}
       </div>
 

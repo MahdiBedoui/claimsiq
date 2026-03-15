@@ -1,0 +1,21 @@
+claim_id,policy_id,claimant_name,claimant_age,claimant_state,claim_date,received_date,claim_type,diagnosis_code,provider_name,claim_amount,approved_amount,status,processing_days,adjuster_id,notes
+CLM-100001,POL-55012,Sarah Johnson,34,MN,2025-11-15,2025-11-17,Medical,J06.9,HealthFirst Medical,4200.50,3780.45,Closed,12,ADJ-101,Routine medical claim
+CLM-100002,POL-62340,Michael Chen,52,IL,2025-12-03,2025-12-05,Surgical,S52.501A,AllCare Surgical,45000.00,38500.00,Closed,28,ADJ-115,Elective surgery - approved
+CLM-100003,POL-71289,Emily Rodriguez,28,CA,2026-01-10,2026-01-12,Dental,K21.0,ClearPath Dental,1850.00,,Pending,0,ADJ-108,Awaiting documentation
+CLM-100004,POL-48392,James Williams,67,TX,2026-01-22,2026-01-23,Pharmacy,E11.9,PrimeCare Pharmacy,320.75,320.75,Closed,5,ADJ-101,Diabetes medication refill
+CLM-100005,POL-39201,Lisa Thompson,45,OH,2025-10-08,2025-10-10,Behavioral Health,F32.9,Behavioral Wellness Center,3500.00,2800.00,Closed,35,ADJ-120,Therapy sessions - Q3
+CLM-100006,POL-81456,Robert Garcia,71,FL,2026-02-14,2026-02-15,Emergency,J18.9,Metro Emergency Services,18750.00,,Under Review,0,ADJ-115,ER visit - pneumonia
+CLM-100007,POL-27634,Amanda Foster,39,MI,2025-09-20,2025-09-22,Vision,Z00.00,Horizon Eye Care,425.00,382.50,Closed,8,ADJ-108,Annual eye exam + lenses
+CLM-100008,POL-93847,David Kim,55,NY,2026-01-05,2026-01-08,Medical,I10,Lakeview Health,6200.00,0.00,Denied,18,ADJ-101,Pre-authorization not obtained
+CLM-100009,POL-15678,Jessica Martinez,31,GA,2026-02-28,2026-03-01,Dental,K21.0,ClearPath Dental,950.00,,Pending,0,ADJ-120,Crown replacement
+CLM-100010,POL-44921,Thomas Anderson,48,PA,2025-08-15,2025-08-17,Surgical,M54.5,Midwest Regional Hospital,32000.00,28800.00,Closed,42,ADJ-115,Spinal procedure
+CLM-100011,POL-67835,,42,WI,2025-12-19,2025-12-20,Medical,J06.9,Summit Care Partners,2100.00,,Open,0,ADJ-108,Missing claimant name - needs follow-up
+CLM-100012,POL-52190,Karen White,58,VA,2026-03-01,2026-03-02,Pharmacy,N39.0,PrimeCare Pharmacy,185.50,185.50,Closed,3,ADJ-101,Antibiotic prescription
+CLM-100013,POL-38472,Daniel Brown,36,IN,2025-11-28,2025-11-30,Emergency,S52.501A,Metro Emergency Services,12400.00,10850.00,Closed,22,ADJ-120,Fracture treatment - ER
+CLM-100014,POL-76543,Rachel Lee,29,MO,2026-02-10,2026-02-11,Vision,Z00.00,Horizon Eye Care,275.00,,Pending,0,ADJ-108,Contact lens fitting
+CLM-100015,POL-21098,Christopher Davis,63,NC,2025-10-30,2025-11-01,Medical,E11.9,Northside Family Practice,-500.00,,Open,0,ADJ-115,Negative amount - data entry error
+CLM-100016,POL-85634,Maria Gonzalez,44,IA,2026-01-18,2026-01-19,Behavioral Health,F32.9,Behavioral Wellness Center,5200.00,,Under Review,0,ADJ-101,Extended therapy program
+CLM-100017,POL-49283,Steven Taylor,57,MN,2025-07-12,2025-07-14,Surgical,M54.5,Valley Medical,67500.00,60750.00,Closed,55,ADJ-120,Major joint replacement
+CLM-100018,POL-33157,Nicole Harris,25,IL,2026-02-22,2026-02-23,,J06.9,HealthFirst Medical,1800.00,,Open,0,ADJ-108,Missing claim type - needs correction
+CLM-100019,POL-72641,Andrew Wilson,50,CA,2025-12-15,2025-12-17,Medical,I10,Lakeview Health,3750.00,3375.00,Closed,14,ADJ-115,Hypertension management
+CLM-100020,POL-18956,Samantha Clark,33,TX,2026-03-05,2026-03-06,Pharmacy,N39.0,PrimeCare Pharmacy,92.30,92.30,Closed,2,ADJ-101,Prescription refill

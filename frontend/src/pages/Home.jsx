@@ -176,7 +176,7 @@ export default function Home() {
           <p className="text-sm text-amber-700 dark:text-amber-400/80 mt-1">
             Follow the step-by-step workflow below to learn how ClaimsIQ works. Each step links
             directly to the relevant page so you can jump in right away. The system comes pre-loaded
-            with sample data so you can explore every feature immediately.
+            with sample data, and the Submissions page has a ready-to-use sample CSV so you can test the full workflow immediately.
           </p>
         </div>
       </div>
