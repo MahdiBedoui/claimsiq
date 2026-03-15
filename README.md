@@ -2,7 +2,7 @@
 
 A full-stack web application that automates insurance claims data ingestion, validation, report generation, and distribution tracking. Built with React, FastAPI, and Tailwind CSS.
 
-**Live Demo:** [claimsiq.up.railway.app](https://claimsiq.up.railway.app) *(update with your deployment URL)*
+**Live Demo:** [claimsiq.up.railway.app](https://claimsiq.up.railway.app) 
 
 ## Features
 
