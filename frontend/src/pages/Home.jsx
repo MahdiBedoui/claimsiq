@@ -139,12 +139,25 @@ export default function Home() {
           <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/3" />
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full translate-y-1/2 -translate-x-1/4" />
         </div>
-        <div className="relative z-10 max-w-3xl">
-          <div className="flex items-center gap-3 mb-4">
-            <Activity className="w-10 h-10 text-white" />
-            <h1 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
-              Welcome to Claims<span className="text-cyan-200">IQ</span>
-            </h1>
+        <div className="relative z-10">
+          <div className="flex items-start justify-between mb-4">
+            <div className="flex items-center gap-3">
+              <Activity className="w-10 h-10 text-white" />
+              <h1 className="text-3xl md:text-4xl font-bold text-white tracking-tight">
+                Welcome to Claims<span className="text-cyan-200">IQ</span>
+              </h1>
+            </div>
+            <div className="flex flex-col items-end gap-1 text-sm text-white/70">
+              <span>Built by <span className="font-medium text-white/90">Mahdi Bedoui</span></span>
+              <a
+                href="https://github.com/MahdiBedoui/claimsiq"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-white/70 hover:text-white transition-colors"
+              >
+                <Github className="w-4 h-4" /> GitHub
+              </a>
+            </div>
           </div>
           <p className="text-lg text-white/90 leading-relaxed mb-6 max-w-2xl">
             ClaimsIQ is your end-to-end platform for insurance claims reporting and analytics.
@@ -266,20 +279,6 @@ export default function Home() {
             Explore Dashboard
           </button>
         </div>
-      </div>
-
-      {/* Footer Credits */}
-      <div className="flex items-center justify-center gap-4 text-sm text-gray-400 dark:text-gray-500 pt-2">
-        <span>Built by <span className="font-medium text-gray-600 dark:text-gray-300">Mahdi Bedoui</span></span>
-        <span className="text-gray-300 dark:text-gray-600">|</span>
-        <a
-          href="https://github.com/MahdiBedoui/claimsiq"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
-        >
-          <Github className="w-4 h-4" /> GitHub
-        </a>
       </div>
     </div>
   )
