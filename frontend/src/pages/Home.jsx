@@ -162,7 +162,7 @@ export default function Home() {
           <p className="text-lg text-white/90 leading-relaxed mb-6 max-w-2xl">
             ClaimsIQ is your end-to-end platform for insurance claims reporting and analytics.
             Upload claims data, validate it automatically, generate professional reports, and
-            distribute them to stakeholders — all from one place.
+            distribute them to stakeholders. All from one place.
           </p>
           <div className="flex flex-wrap gap-3">
             <button
