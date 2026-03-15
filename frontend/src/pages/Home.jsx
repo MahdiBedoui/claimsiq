@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import {
   Activity, Inbox, ShieldCheck, FileSpreadsheet, Send, ClipboardList,
-  ArrowRight, Upload, CheckCircle, BarChart3, FileDown, Mail, Lightbulb
+  ArrowRight, Upload, CheckCircle, BarChart3, FileDown, Mail, Lightbulb, Github
 } from 'lucide-react'
 
 const workflowSteps = [
@@ -266,6 +266,20 @@ export default function Home() {
             Explore Dashboard
           </button>
         </div>
+      </div>
+
+      {/* Footer Credits */}
+      <div className="flex items-center justify-center gap-4 text-sm text-gray-400 dark:text-gray-500 pt-2">
+        <span>Built by <span className="font-medium text-gray-600 dark:text-gray-300">Mahdi Bedoui</span></span>
+        <span className="text-gray-300 dark:text-gray-600">|</span>
+        <a
+          href="https://github.com/MahdiBedoui/claimsiq"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
+        >
+          <Github className="w-4 h-4" /> GitHub
+        </a>
       </div>
     </div>
   )
