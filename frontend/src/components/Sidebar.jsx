@@ -1,11 +1,12 @@
 import { NavLink } from 'react-router-dom'
 import {
   LayoutDashboard, Inbox, ShieldCheck, FileSpreadsheet,
-  Send, ClipboardList, Settings, Moon, Sun, ChevronLeft, ChevronRight, Activity
+  Send, ClipboardList, Settings, Moon, Sun, ChevronLeft, ChevronRight, Activity, Home
 } from 'lucide-react'
 
 const links = [
-  { to: '/', icon: LayoutDashboard, label: 'Dashboard' },
+  { to: '/', icon: Home, label: 'Home' },
+  { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard' },
   { to: '/submissions', icon: Inbox, label: 'Submissions' },
   { to: '/quality', icon: ShieldCheck, label: 'Data Quality' },
   { to: '/reports', icon: FileSpreadsheet, label: 'Reports' },

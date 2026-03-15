@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Sidebar from './components/Sidebar'
+import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
 import Submissions from './pages/Submissions'
 import DataQuality from './pages/DataQuality'
@@ -24,7 +25,8 @@ export default function App() {
       <main className={`flex-1 overflow-y-auto transition-all duration-300 ${sidebarOpen ? 'ml-64' : 'ml-16'}`}>
         <div className="p-6 max-w-[1400px] mx-auto">
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/submissions" element={<Submissions />} />
             <Route path="/quality" element={<DataQuality />} />
             <Route path="/reports" element={<Reports />} />
