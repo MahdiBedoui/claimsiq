@@ -1,4 +1,4 @@
-# ClaimsIQ — Insurance Claims Reporting Platform
+# ClaimsIQ: Insurance Claims Reporting Platform
 
 A full-stack web application that automates insurance claims data ingestion, validation, report generation, and distribution tracking. Built with React, FastAPI, and Tailwind CSS.
 
